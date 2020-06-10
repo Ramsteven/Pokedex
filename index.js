@@ -32,7 +32,7 @@ function black(){
         formEl.style.background = "#1c0346";
         inputEl.style.background = "black"
         inputEl.style.color = "white"
-        buttonEl.innerHTML = "Daymode"
+       
         Submit.style.background ="#6ac96f"
 
     }else if(bodyEl.id === "black"){
@@ -41,7 +41,7 @@ function black(){
         formEl.style.background = "#56cfe1";
         inputEl.style.background = "#80ffdb"
         inputEl.style.color = "white"
-        buttonEl.innerHTML = "NigthMode"
+       
     }
     
     
