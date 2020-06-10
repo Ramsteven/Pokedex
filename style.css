@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+#color {
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://i.imgur.com/zwp2EXP.png") center top;
+  background-color: #7841d8;
+  background-repeat: repeat-x;
+  background-size: contain;
+  font-family: "Press Start 2P";
+  position: relative;
+  
+  
+}
+ 
+form {
+  background: #56cfe1;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+ 
+}
+
+form input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 12px 20px;
+}
+
+.responsive{
+    display: flex;
+    align-items: center;
+}
+
+form input[type="text"] {
+  background: #80ffdb;
+  max-width: 100%;
+}
+
+form input[type="submit"] {
+  cursor: pointer;
+  margin-left: 8px;
+  background: #5e60ce;
+  
+}
+
+.pokemon {
+  text-align: center;
+  
+  
+}
+
+
+
+h2 {
+  text-transform: capitalize;
+}
+
+.stats {
+  font-size: 14px;
+}
+
+#black{
+  padding: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://i.pinimg.com/originals/2f/e0/69/2fe06900422b9f6fd3435a540b47621d.jpg") center top;
+  background-color: black;
+  background-repeat: repeat-x;
+  background-size: contain;
+  font-family: "Press Start 2P";
+  position: relative;
+  color: white
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+  }
+
+
+  button{
+      background: black;
+      width: fit-content;
+      font-size: 20px;
+      margin: 10px 100px;
+      
+  }
+
+  /*slider*/
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 238, 2) ;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  input:checked + .slider {
+    background-color: black ;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px black;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .change{
+      margin-left: 50px;
+  }
+
+ /* animations */
+
+
+.pokemon h2{
+
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+
+.pokemon .stats p{
+
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.pokemon .abilities h4{
+
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+.pokemon .abilities p{
+
+    animation-duration: 5s; /* don't forget to set a duration! */
+}
+
+
+@media (max-width: 450px){
+    #black {
+        background-image: url("https://mcdn.wallpapersafari.com/medium/28/72/SLzG8O.jpg");
+        background-size: cover;
+        height: 100vh;
+        
+    }
+
+    #color {
+        background-image: url("https://img.wallpapersafari.com/tablet/768/1024/28/7/NTHeoM.png");
+        background-size: cover;
+        height: 100vh;
+        
+    }
+    form{
+        display: inline-block;
+        text-align: center;
+    }
+    .responsive{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5px;
+    }
+}
