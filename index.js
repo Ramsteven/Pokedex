@@ -18,6 +18,12 @@ formEl.addEventListener( "submit", (e)=>{
     getPokemon(inputEl.value)
 })
 
+
+//////////////////
+///dark mode/////
+////////////////
+
+
 function black(){
     console.log(bodyEl.id)
     if(bodyEl.id === "color"){
