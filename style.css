@@ -234,7 +234,7 @@ h2 {
     }
 }
 
-media (max-width: 360px){
+@media (max-width: 360px){
 
     #color {
         background-image: url("https://img.wallpapersafari.com/tablet/768/1024/28/7/NTHeoM.png");
@@ -248,5 +248,10 @@ media (max-width: 360px){
             
             margin-top: 120px;
         }        
+
+
+    .pokemon{
+        color: beige;
+    }    
 
 }
